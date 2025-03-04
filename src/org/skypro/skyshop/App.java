@@ -17,5 +17,8 @@ public class App {
         System.out.println(testPB.prodInBasket("ggg"));
         System.out.println(testPB.prodInBasket("ggggg"));
         testPB.clearBasket();
+        testPB.getBasket();
+        testPB.getBasketPrice();
+        testPB.prodInBasket("ggg");
     }
 }

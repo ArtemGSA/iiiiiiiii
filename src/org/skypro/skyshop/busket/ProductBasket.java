@@ -15,23 +15,39 @@ public class ProductBasket {
         }
     }
     public int getBasketPrice(){
-        int totalPrice = 0;
-        for (int i=0;i<5;i++){
-            totalPrice+=productBasket[i].getPrice();
+        if(productBasket[0]!=null) {
+            int totalPrice = 0;
+            for (int i = 0; i < 5; i++) {
+                totalPrice += productBasket[i].getPrice();
+            }
+            return totalPrice;
         }
-        return totalPrice;
+        else {
+            System.out.println("Корзина пока пуста");
+            return 0;
+        }
     }
     public void getBasket(){
-        for(int i= 0; i<5; i++){
-            System.out.println(productBasket[i].getName()+": "+productBasket[i].getPrice());
+        if(productBasket[0]!=null) {
+            for (int i = 0; i < 5; i++) {
+                System.out.println(productBasket[i].getName() + ": " + productBasket[i].getPrice());
+            }
+            System.out.println("Итого: " + getBasketPrice());
         }
-        System.out.println("Итого: "+getBasketPrice());
+        else {
+            System.out.println("Корзина пока пуста");
+        }
     }
     public boolean prodInBasket(String name){
-        for(int i = 0;i<5;i++) {
-            if (productBasket[i].getName() == name){
-                return true;
+        if(productBasket[0]!=null) {
+            for(int i = 0;i<5;i++) {
+                if (productBasket[i].getName() == name){
+                    return true;
+                }
             }
+        }
+        else {
+            System.out.println("Корзина пока пуста");
         }
         return false;
     }
