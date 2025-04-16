@@ -18,7 +18,9 @@ public class ProductBasket {
         if(productBasket[0]!=null) {
             int totalPrice = 0;
             for (int i = 0; i < 5; i++) {
-                totalPrice += productBasket[i].getPrice();
+                if(productBasket[i]!=null) {
+                    totalPrice += productBasket[i].getPrice();
+                }
             }
             return totalPrice;
         }
@@ -30,7 +32,9 @@ public class ProductBasket {
     public void getBasket(){
         if(productBasket[0]!=null) {
             for (int i = 0; i < 5; i++) {
-                System.out.println(productBasket[i].getName() + ": " + productBasket[i].getPrice());
+                if(productBasket[i]!=null) {
+                    System.out.println(productBasket[i].toString());
+                }
             }
             System.out.println("Итого: " + getBasketPrice());
         }
@@ -41,8 +45,10 @@ public class ProductBasket {
     public boolean prodInBasket(String name){
         if(productBasket[0]!=null) {
             for(int i = 0;i<5;i++) {
-                if (productBasket[i].getName() == name){
-                    return true;
+                if(productBasket[i]!=null) {
+                    if (productBasket[i].getName() == name) {
+                        return true;
+                    }
                 }
             }
         }
@@ -55,6 +61,7 @@ public class ProductBasket {
         for(int i = 0;i<5;i++){
             productBasket[i] = null;
         }
+        productCount = 0;
     }
 
 }
