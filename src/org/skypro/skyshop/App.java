@@ -1,10 +1,9 @@
 package org.skypro.skyshop;
 
 import org.skypro.skyshop.busket.ProductBasket;
-import org.skypro.skyshop.product.DiscountedProduct;
-import org.skypro.skyshop.product.FixPriceProduct;
-import org.skypro.skyshop.product.Product;
-import org.skypro.skyshop.product.SimpleProduct;
+import org.skypro.skyshop.product.*;
+
+import java.util.Arrays;
 
 public class App {
     public static void main(String[] args) {
@@ -32,5 +31,16 @@ public class App {
         f.toString();;
         System.out.println(testPB.getBasketPrice());
         System.out.println(testPB.prodInBasket("qq"));
+        Article article = new Article("ggg", "rrrrrrrrr");
+        System.out.println(article.toString());
+        System.out.println(f.getSringrepresentation());
+        Article astic = new Article("fff", "ttttttttt");
+        SearchEngine testEngine  = new SearchEngine(6);
+        testEngine.add(a);
+        testEngine.add(f);
+        testEngine.add(article);
+        testEngine.add(astic);
+        System.out.println(Arrays.toString(testEngine.search("www")));
+        System.out.println(Arrays.toString(testEngine.search("fff")));
     }
 }
