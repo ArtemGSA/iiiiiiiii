@@ -5,12 +5,8 @@ interface Searchable {
     default String searchTerm(){
         return "q";
     }
-    default String searchType(){
-        return "j";
-    }
-    default String searchName(){
-        return "r";
-    }
+    String searchType();
+    String searchName();
     default String getSringrepresentation(){
         return "имя "+searchName()+" - тип "+searchType();
     }

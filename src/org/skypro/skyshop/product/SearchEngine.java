@@ -1,6 +1,6 @@
 package org.skypro.skyshop.product;
 
-public class SearchEngine implements Searchable{
+public class SearchEngine{
     private Searchable[] searchables;
     private int length = 0;
     private int currentLength = 0;

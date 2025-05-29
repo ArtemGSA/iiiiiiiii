@@ -35,7 +35,7 @@ public class App {
         System.out.println(article.toString());
         System.out.println(f.getSringrepresentation());
         Article astic = new Article("fff", "ttttttttt");
-        SearchEngine testEngine  = new SearchEngine(6);
+        SearchEngine testEngine  = new SearchEngine(7);
         testEngine.add(a);
         testEngine.add(f);
         testEngine.add(article);
