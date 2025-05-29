@@ -1,6 +1,8 @@
-package org.skypro.skyshop.product;
+package org.skypro.skyshop.defineclass;
 
-public class FixPriceProduct extends Product{
+import org.skypro.skyshop.pubclass.Product;
+
+public class FixPriceProduct extends Product {
     private static int FIX_PRICE=250;
     public FixPriceProduct(String name){
         super(name);

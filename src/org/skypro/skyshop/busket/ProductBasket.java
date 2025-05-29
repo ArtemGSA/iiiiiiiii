@@ -1,6 +1,6 @@
 package org.skypro.skyshop.busket;
 
-import org.skypro.skyshop.product.Product;
+import org.skypro.skyshop.pubclass.Product;
 
 public class ProductBasket {
     private int productCount = 0;

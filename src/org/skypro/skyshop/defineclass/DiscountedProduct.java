@@ -1,6 +1,8 @@
-package org.skypro.skyshop.product;
+package org.skypro.skyshop.defineclass;
 
-public class DiscountedProduct extends Product{
+import org.skypro.skyshop.pubclass.Product;
+
+public class DiscountedProduct extends Product {
     private int basicPrice;
     private int discountInIntPrecentages;
 

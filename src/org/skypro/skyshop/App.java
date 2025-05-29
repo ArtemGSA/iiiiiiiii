@@ -1,7 +1,9 @@
 package org.skypro.skyshop;
 
 import org.skypro.skyshop.busket.ProductBasket;
-import org.skypro.skyshop.product.*;
+import org.skypro.skyshop.defineclass.*;
+import org.skypro.skyshop.engine.SearchEngine;
+import org.skypro.skyshop.pubclass.Product;
 
 import java.util.Arrays;
 
@@ -35,7 +37,7 @@ public class App {
         System.out.println(article.toString());
         System.out.println(f.getSringrepresentation());
         Article astic = new Article("fff", "ttttttttt");
-        SearchEngine testEngine  = new SearchEngine(7);
+        SearchEngine testEngine  = new SearchEngine(10);
         testEngine.add(a);
         testEngine.add(f);
         testEngine.add(article);

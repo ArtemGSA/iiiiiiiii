@@ -1,6 +1,8 @@
-package org.skypro.skyshop.product;
+package org.skypro.skyshop.defineclass;
 
-public class SimpleProduct extends Product{
+import org.skypro.skyshop.pubclass.Product;
+
+public class SimpleProduct extends Product {
     private int price;
     public SimpleProduct(String name, int price){
         super (name);

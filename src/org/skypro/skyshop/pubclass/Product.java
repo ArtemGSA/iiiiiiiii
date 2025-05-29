@@ -1,6 +1,7 @@
-package org.skypro.skyshop.product;
-import java.util.Objects;
-public abstract class Product implements Searchable{
+package org.skypro.skyshop.pubclass;
+import org.skypro.skyshop.interfaces.Searchable;
+
+public abstract class Product implements Searchable {
     private String name;
     public Product(String name){
         this.name=name;

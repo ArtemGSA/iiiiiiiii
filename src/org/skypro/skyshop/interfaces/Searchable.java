@@ -1,5 +1,5 @@
-package org.skypro.skyshop.product;
-interface Searchable {
+package org.skypro.skyshop.interfaces;
+public interface Searchable {
 
     boolean isSearchable = true;
     default String searchTerm(){
