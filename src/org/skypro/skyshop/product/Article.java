@@ -7,6 +7,7 @@ public class Article implements Searchable{
         this.name = name;
         this.text = text;
     }
+    ///
     @Override
     public String toString(){
         String s = name + "\n"+text;

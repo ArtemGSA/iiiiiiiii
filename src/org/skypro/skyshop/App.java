@@ -29,6 +29,7 @@ public class App {
         testPB.getBasket();
         a.toString();
         f.toString();;
+        /////
         System.out.println(testPB.getBasketPrice());
         System.out.println(testPB.prodInBasket("qq"));
         Article article = new Article("ggg", "rrrrrrrrr");

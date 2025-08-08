@@ -34,6 +34,7 @@ public class SearchEngine{
                 this.searchables[currentLength] = sAdd;
             }
             currentLength += 1;
+            ///
         }
     }
 }

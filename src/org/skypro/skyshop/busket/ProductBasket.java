@@ -57,6 +57,7 @@ public class ProductBasket {
         }
         return false;
     }
+    ///
     public void clearBasket(){
         for(int i = 0;i<5;i++){
             productBasket[i] = null;

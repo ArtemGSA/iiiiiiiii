@@ -9,6 +9,7 @@ public class DiscountedProduct extends Product{
         this.basicPrice = basicPrice;
         this.discountInIntPrecentages = discountInIntPrecentages;
     }
+    ///
 
     public int getDiscountInIntPrecentages() {
         return discountInIntPrecentages;

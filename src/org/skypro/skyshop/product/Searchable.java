@@ -1,4 +1,5 @@
 package org.skypro.skyshop.product;
+///
 interface Searchable {
 
     boolean isSearchable = true;
