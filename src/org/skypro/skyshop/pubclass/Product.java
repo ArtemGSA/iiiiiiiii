@@ -4,12 +4,7 @@ import org.skypro.skyshop.interfaces.Searchable;
 public abstract class Product implements Searchable {
     private String name;
     public Product(String name){
-        if(!name.isBlank()) {
-            this.name = name;
-        }
-        else{
-            throw new IllegalArgumentException(name + "name is empty");
-        }
+        this.name = name;
     }
     public String getName() {
         return name;

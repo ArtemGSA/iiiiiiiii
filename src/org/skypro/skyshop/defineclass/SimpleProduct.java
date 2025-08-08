@@ -6,12 +6,7 @@ public class SimpleProduct extends Product {
     private int price;
     public SimpleProduct(String name, int price){
         super (name);
-        if (price>0) {
-            this.price = price;
-        }
-        else {
-            throw new IllegalArgumentException(price + "price is 0 or lower");
-        }
+        this.price = price;
     }
     @Override
     public int getPrice() {

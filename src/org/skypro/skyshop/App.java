@@ -3,7 +3,6 @@ package org.skypro.skyshop;
 import org.skypro.skyshop.busket.ProductBasket;
 import org.skypro.skyshop.defineclass.*;
 import org.skypro.skyshop.engine.SearchEngine;
-import org.skypro.skyshop.exceptions.BestResultNotFoundException;
 import org.skypro.skyshop.interfaces.Searchable;
 import org.skypro.skyshop.pubclass.Product;
 
@@ -46,42 +45,5 @@ public class App {
         testEngine.add(astic);
         System.out.println(Arrays.toString(testEngine.search("www")));
         System.out.println(Arrays.toString(testEngine.search("fff")));
-        try {
-            SimpleProduct spBroken = new SimpleProduct("", 12);
-        } catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
-        try{
-            SimpleProduct spBroken2 = new SimpleProduct("qq", 0);
-        }catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
-        try{
-            DiscountedProduct dpBroken = new DiscountedProduct("qqq", 0, 12);
-        } catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
-        try{
-            DiscountedProduct dpBroken2 = new DiscountedProduct("qqq", 22, 112);
-        } catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
-        try{
-            DiscountedProduct dpBroken3 = new DiscountedProduct("qqq", 33, -2);
-        } catch(IllegalArgumentException e){
-            System.out.println(e);
-        }
-        try {
-            Searchable asd = testEngine.mostRelevant("ggg");
-            System.out.println(asd.getSringrepresentation());
-        }catch (BestResultNotFoundException e){
-            System.out.println(e);
-        }
-        try{
-            Searchable ads = testEngine.mostRelevant("tututu");
-            System.out.println(ads.getSringrepresentation());
-        }catch (BestResultNotFoundException e){
-            System.out.println(e);
-        }
     }
 }
